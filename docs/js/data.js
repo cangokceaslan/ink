@@ -25,7 +25,11 @@ const links = [
         title: "Instagram"
     },
     {
-        href: "https://www.youtube.com/cangokceaslan",
+        href: "https://www.github.com/cangokceaslan",
+        title: "GitHub"
+    },
+    {
+        href: "https://www.youtube.com/cangokceaslan?sub_confirmation=1",
         title: "Youtube"
     },
     {
@@ -70,6 +74,7 @@ const animationTypes = [
 const imagedEmbeds = [
     "https://i.pinimg.com/originals/0d/ba/57/0dba57a96d995f5b92d6294245ead3eb.jpg",
     "https://www.kolpaper.com/wp-content/uploads/2020/04/Wallpaper-Earth-2.jpg",
+    "https://www.itl.cat/pngfile/big/44-448645_red-space-1920x1080-hd-wallpaper-red-space-desktop.jpg"
 
 ]
 const videoEmbeds = [
