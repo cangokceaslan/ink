@@ -3,13 +3,12 @@
     --primary-font: 'Montserrat', sans-serif;
 }
 body{
-    width:100vw;
-    height:100vh;
     padding:60px;
-    overflow-x: hidden;
-    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200625/pngtree-video-playback-logo-decoration-background-image_340160.jpg");
-    background-repeat: none;
+    overflow-x: hidden !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    background-color: black;
 }
 body::-webkit-scrollbar {
   width: 0em;
@@ -53,12 +52,12 @@ p{
     color:var(--primary-color);
 }
 .central-body{
+    flex:1;
     width:800px;
-    height:700px;
-    position: absolute;
+    height:auto;
+    position: relative;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translateX(-50%);
 }
 .profile-info{
     width:100%;
@@ -66,15 +65,15 @@ p{
 }
 .profile-image{
     display: block;
-    margin-top:60px !important;
+    margin-top:0px !important;
     flex:1;
     margin: auto;
-    width:120px;
-    height:120px;
-    border-radius: 60px;
+    width:140px;
+    height:140px;
+    border-radius: 70px;
     border: 3px solid var(--primary-color);
 }
-.name{
+.fullName{
     display: block;
     width:300px;
     border-radius: 20px;
@@ -106,7 +105,8 @@ p{
   -webkit-text-stroke-width: .02px; 
 }
 .ink{
-    margin:0px 0px 30px 0px;
+    z-index: 9999;
+    margin:0px 0px 40px 0px;
     background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
     color:white;
@@ -137,7 +137,6 @@ p{
 }
 .link:hover{
         color:var(--primary-color);
-
 }
 .reachMe{
     position: fixed;
@@ -152,6 +151,7 @@ p{
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: -99;
+  
 }
 .video-foreground,
 .video-background iframe {
@@ -181,4 +181,57 @@ p{
 }
 @media all and (max-width: 500px) {
 .vid-info .acronym { display: none; }
+}
+@media only screen and (max-width: 700px) {
+    body{
+        max-width: 700px;
+        padding:0px;
+    }
+  .central-body{
+      overflow-x: hidden;
+      padding-top: 60px;
+    width:95% !important;
+    height:auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ink{
+        width:100% !important;
+
+}
+}
+@media only screen and (min-width:700px) and (max-width: 800px) {
+    body{
+        max-width: 900px;
+    }
+  .central-body{
+      overflow-x: hidden;
+      margin-top: 60px;
+    width:600px !important;
+    height:auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ink{
+    width:600px !important;
+}
+}
+@media only screen and (min-width:800px) and (max-width: 900px) {
+    body{
+        max-width: 900px;
+    }
+  .central-body{
+      overflow-x: hidden;
+      padding-top: 60px;
+    width:750px !important;
+    height:auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ink{
+    width:750px !important;
+}
 }

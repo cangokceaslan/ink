@@ -2,9 +2,27 @@
 <html>
 
 <head>
-    <title>Ink - Can Gökçeaslan</title>
+    <title>Can Gökçeaslan - Ink</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/png" href="./assets/images/favicon.jpg">
+    <meta property="og:title" content="Can Gökçeaslan - Ink">
+    <meta property="og:description" content="Bu sayfada bana ulaşmak için gerekli olan bağlantıları görebilirsiniz.">
+    <meta property="og:image" content="https://ink.cangokceaslan.com/assets/images/my-image.jpg">
+    <meta property="og:url" content="https://ink.cangokceaslan.com/">
+    <meta name="twitter:title" content="Can Gökçeaslan - Ink">
+    <meta name="twitter:description" content="Bu sayfada bana ulaşmak için gerekli olan bağlantıları görebilirsiniz.">
+    <meta name="twitter:image" content="https://ink.cangokceaslan.com/assets/images/my-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@https://www.cangokceaslan.com/-cangokceaslan">
+    <meta property="og:site_name" content="Can Gökçeaslan - Ink">
+    <meta property="og:title" content="Can Gökçeaslan - Ink">
+    <meta property="og:description" content="Bu sayfada bana ulaşmak için gerekli olan bağlantıları görebilirsiniz.">
+    <meta property="og:image" content="https://ink.cangokceaslan.com/assets/images/my-image.jpg">
+    <meta property="og:url" content="https://ink.cangokceaslan.com/">
+    <meta name="twitter:card" content="summary_large_image">
     <link href="./css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -17,9 +35,9 @@
 <body>
     <div class="central-body">
         <div class="profile-info" id="profile-info">
-            <img src="https://drive.google.com/thumbnail?id=1YyuPtO27XaYHqIYDdt4IXL2TNwiuKlB-"
+            <img id="profilePhoto" src="https://drive.google.com/thumbnail?id=1YyuPtO27XaYHqIYDdt4IXL2TNwiuKlB-"
                 class="profile-image animate__animated animate__rotateIn" />
-            <p class="name" id="name">Can Gökçeaslan</p>
+            <p class="fullName" id="fullName">Can Gökçeaslan</p>
             <p class="description" id="description">Udemy / Youtube / Upwork</p>
         </div>
         <div id="links">
@@ -29,18 +47,19 @@
         </div> -->
         </div>
     </div>
-    <div class="video-background">
+    <div class="video-background" id="video-background">
         <div class="video-foreground">
-            <iframe
+            <!-- <iframe
                 src="https://www.youtube.com/embed/lRTtMcx6rSM?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=W0LHTWG-UmQ"
-                frameborder="0" allowfullscreen></iframe>
+                frameborder="0" allowfullscreen></iframe> -->
+            <iframe id="background-video-frame" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
-    <div class="reachMe animate__animated animate__slideInRight" id="bottom-contacter">
+    <!-- <div class="reachMe animate__animated animate__slideInRight" id="bottom-contacter">
         <div role="button" id="icon-container">
             <i class="fas far fa-inbox icon-container"></i>
         </div>
-    </div>
+    </div> -->
 
     <script src="./js/data.js"></script>
     <script src="./js/main.js"></script>

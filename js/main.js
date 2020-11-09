@@ -1,9 +1,43 @@
-const rotation = ["lightSpeedInLeft", "lightSpeedInRight"];
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+}
+const embedComplete = "?version=3&controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=''&start=" + (Math.random() * 300);
+let runtime0 = (function () {
+    if (pageProps.background === "video") {
+        document.getElementById("background-video-frame").src = (pageProps.videoEmbed + embedComplete).toString();
+    } else if (pageProps.background === "image") {
+        let element = document.getElementById("video-background");
+        element.parentNode.removeChild(element);
+        document.getElementsByTagName("body")[0].style.backgroundImage = "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('" + pageProps.imageEmbed + "')";
+    }
+})()
+let runtime1 = (() => {
+    document.getElementById("profilePhoto").src = profileInformation.profilePhoto;
+    document.getElementById("fullName").innerText = profileInformation.fullName;
+    document.getElementById("description").innerText = profileInformation.description;
+})();
+const animate = shuffle(animationTypes);
+
 [...links].map((link, counter) => {
     let inkElement = document.createElement("div");
 
-    inkElement.setAttribute('class', 'ink animate__animated animate__' + rotation[(counter % rotation.length)]);
-    inkElement.setAttribute('style', 'animation-delay: ' + counter * 0.5 + 's;')
+    inkElement.setAttribute('class', 'ink animate__animated animate__' + animate[(counter % animate.length)]);
+    inkElement.setAttribute('style', 'animation-delay: ' + counter * 0.7 + 's;')
     let a = document.createElement('a');
     a.setAttribute('class', 'link');
     a.href = link.href;
@@ -12,57 +46,6 @@ const rotation = ["lightSpeedInLeft", "lightSpeedInRight"];
     inkElement.appendChild(a);
     document.getElementById("links").appendChild(inkElement);
 })
-
-function profileInfoFiller(data = {
-    profileImage: "https://www.cangokceaslan.com/images/cangokceaslan-long.webp",
-    name: 'Can Gökçeaslan',
-    description: ''
-}) {
-    const profileElement = document.getElementById("profile-info");
-    const oldProfileImg = profileElement.getElementsByTagName("img")[0];
-    profileElement.removeChild(oldProfileImg);
-    const img = document.createElement("img");
-    img.setAttribute("class", "profile-image animate__animated animate__rotateIn");
-    img.src = data.profileImage;
-    profileElement.prepend(img);
-    const name = data.name;
-    //const description = data.description.replace(/<br>/ig, "");
-    const description = "Udemy  /  Youtube  /  Upwork";
-    const nameElement = document.createElement("p");
-    const descriptionElement = document.createElement("p");
-    nameElement.setAttribute("class", "name");
-    descriptionElement.setAttribute("class", "description");
-    nameElement.innerHTML = name.trim();
-    descriptionElement.innerText = description;
-    const oldNameElement = document.getElementById("name");
-    const oldDescriptionElement = document.getElementById("description");
-    profileElement.removeChild(oldNameElement);
-    profileElement.removeChild(oldDescriptionElement);
-    profileElement.appendChild(nameElement);
-    profileElement.appendChild(descriptionElement);
-    /* [...document.getElementsByTagName("br")].forEach((item, index) => {
-        item.remove();
-    }) */
-
-}
-function reqListener() {
-    let profileData = JSON.parse(this.responseText);
-    let user = profileData.graphql.user;
-    const profileImage = user.profile_pic_url_hd;
-    const name = user.full_name;
-    const description = user.biography;
-
-    return profileInfoFiller({
-        profileImage,
-        name,
-        description
-    })
-}
-
-var oReq = new XMLHttpRequest();
-oReq.addEventListener("load", reqListener);
-oReq.open("GET", "https://www.instagram.com/cangokceaslan/?__a=1");
-oReq.send();
 document.getElementById("bottom-contacter").onclick = function () {
     window.open("https://docs.google.com/forms/d/e/1FAIpQLSfYpUqwa-3RgN5Foh5vfHJZvKcTG9fhQekWpkp8uI_Hk49ZDQ/viewform", "__blank");
 }
