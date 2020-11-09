@@ -40,6 +40,14 @@ const links = [
         href: "https://www.linkedin.com/in/cangokceaslan",
         title: "Linkedin"
     },
+    {
+        href: "https://www.instagram.com/kodlanio",
+        title: "Kodlanio"
+    },
+    {
+        href: "https://www.udemy.com/course/javascript-temelden-profesyonele-kurs-1/",
+        title: "JavaScript Temelden Profesyonele"
+    },
 
 ]
 const animationTypes = [

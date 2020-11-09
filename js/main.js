@@ -37,7 +37,7 @@ const animate = shuffle(animationTypes);
     let inkElement = document.createElement("div");
 
     inkElement.setAttribute('class', 'ink animate__animated animate__' + animate[(counter % animate.length)]);
-    inkElement.setAttribute('style', 'animation-delay: ' + counter * 0.7 + 's;')
+    inkElement.setAttribute('style', 'animation-delay: ' + counter * 0.4 + 's;')
     let a = document.createElement('a');
     a.setAttribute('class', 'link');
     a.href = link.href;
