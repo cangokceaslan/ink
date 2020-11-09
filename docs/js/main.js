@@ -59,10 +59,10 @@ function reqListener() {
     })
 }
 
-var oReq = new XMLHttpRequest();
+/* var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
 oReq.open("GET", "https://www.instagram.com/cangokceaslan/?__a=1");
-oReq.send();
+oReq.send(); */
 document.getElementById("bottom-contacter").onclick = function () {
     window.open("https://docs.google.com/forms/d/e/1FAIpQLSfYpUqwa-3RgN5Foh5vfHJZvKcTG9fhQekWpkp8uI_Hk49ZDQ/viewform", "__blank");
 }
