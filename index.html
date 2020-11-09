@@ -55,6 +55,18 @@
             <iframe id="background-video-frame" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
+    <a href="./assets/images/qr.png" target="__blank" download="./assets/images/qr.png"
+        class="animate__animated animate__slideInUp" id="qr"
+        style="position:fixed;right:20px;bottom:20px;height:180px;width:180px">
+        <img src="./assets/images/qr.png" width="180" height="180" alt="QR Image for Ink Url" />
+    </a>
+    <script>
+        if (window.innerWidth > 1280) {
+
+        } else {
+            document.getElementById("qr").remove();
+        }
+    </script>
     <!-- <div class="reachMe animate__animated animate__slideInRight" id="bottom-contacter">
         <div role="button" id="icon-container">
             <i class="fas far fa-inbox icon-container"></i>
