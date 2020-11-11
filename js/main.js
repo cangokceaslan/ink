@@ -16,7 +16,7 @@ function shuffle(array) {
 
     return array;
 }
-const embedComplete = "?version=3&controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=''&start=" + 15;
+const embedComplete = "?version=3&controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=''&start=" + (15).toString() + "&end=" + (276).toString();
 let runtime0 = (function () {
     if (pageProps.background === "video") {
         document.getElementById("background-video-frame").src = (pageProps.videoEmbed + embedComplete).toString();
