@@ -86,8 +86,9 @@ const imagedEmbeds = [
 
 ]
 const videoEmbeds = [
-    "https://www.youtube.com/embed/lRTtMcx6rSM",
-    "https://www.youtube.com/embed/tGx-EMuruq8",
+    "https://www.youtube.com/embed/FG0fTKAqZ5g"
+    //"https://www.youtube.com/embed/lRTtMcx6rSM",
+    //"https://www.youtube.com/embed/tGx-EMuruq8",
 ];
 const pageProps = {
     background: ["video", "image"][window.innerWidth > 1000 ? Math.floor(Math.random() * 2) : 1],
