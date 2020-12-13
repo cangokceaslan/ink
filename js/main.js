@@ -23,7 +23,7 @@ let runtime0 = (function () {
     } else if (pageProps.background === "image") {
         let element = document.getElementById("video-background");
         element.parentNode.removeChild(element);
-        document.getElementsByTagName("body")[0].style.backgroundImage = "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('" + pageProps.imageEmbed + "')";
+        document.getElementsByTagName("body")[0].style.backgroundImage = "linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('" + pageProps.imageEmbed + "')";
     }
 })()
 let runtime1 = (() => {
