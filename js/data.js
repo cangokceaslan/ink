@@ -1,12 +1,18 @@
 const profileInformation = {
-    profilePhoto: "https://drive.google.com/thumbnail?id=1YyuPtO27XaYHqIYDdt4IXL2TNwiuKlB-",
+    profilePhoto: "https://cangokceaslan.com/images/gokceaslan-square.jpg?cache_delete=" + Date.now().toString(),
+    //profilePhoto: "https://drive.google.com/thumbnail?id=1YyuPtO27XaYHqIYDdt4IXL2TNwiuKlB-",
     fullName: "Can Gökçeaslan",
     description: "Udemy / Youtube / Upwork"
 };
 const links = [
+
     {
         href: "https://docs.google.com/forms/d/e/1FAIpQLSfYpUqwa-3RgN5Foh5vfHJZvKcTG9fhQekWpkp8uI_Hk49ZDQ/viewform",
-        title: "Bana bir mesaj gönder"
+        title: "Mesaj Gönder"
+    },
+    {
+        href: "https://www.cangokceaslan.com",
+        title: "Websitem"
     },
     {
         href: "https://www.udemy.com/user/cangokceaslan",
@@ -39,11 +45,7 @@ const links = [
     {
         href: "https://www.instagram.com/kodlanio",
         title: "Kodlanio"
-    },
-    {
-        href: "https://www.udemy.com/course/javascript-temelden-profesyonele-kurs-1/",
-        title: "JavaScript Temelden Profesyonele"
-    },
+    }
 
 ]
 const animationTypes = [
@@ -76,7 +78,9 @@ const animationTypes = [
     "fadeInUp"
 ];
 const imagedEmbeds = [
-    "https://149351115.v2.pressablecdn.com/wp-content/uploads/2018/01/BrutalLifeCycleJavascript.png",
+    "https://ink.cangokceaslan.com/assets/images/background.jpg?cache_delete=" + Date.now().toString()
+    //"https://cutewallpaper.org/21/black-1920x1080-wallpaper/Dark-Desktop-Backgrounds-1920x1080-,-Best-Background-Images-.jpg"
+    //"https://149351115.v2.pressablecdn.com/wp-content/uploads/2018/01/BrutalLifeCycleJavascript.png",
     //"https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-computer-code-technology-advertising-image_165748.jpg"
     //"https://i.pinimg.com/originals/0d/ba/57/0dba57a96d995f5b92d6294245ead3eb.jpg",
     //"https://www.kolpaper.com/wp-content/uploads/2020/04/Wallpaper-Earth-2.jpg",

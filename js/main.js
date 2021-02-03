@@ -31,19 +31,23 @@ let runtime1 = (() => {
     document.getElementById("fullName").innerText = profileInformation.fullName;
     document.getElementById("description").innerText = profileInformation.description;
 })();
-const animate = shuffle(animationTypes);
-
+//const animate = shuffle(animationTypes);
+const animate = animationTypes;
+//animate[(counter % animate.length)];
 [...links].map((link, counter) => {
     let inkElement = document.createElement("div");
 
-    inkElement.setAttribute('class', 'ink animate__animated animate__' + animate[(counter % animate.length)]);
-    inkElement.setAttribute('style', 'animation-delay: ' + counter * 0.4 + 's;')
+    inkElement.setAttribute('class', 'ink animate__animated animate__' + animate[0]);
+    inkElement.setAttribute('style', 'animation-delay: ' + counter * 0.1 + 's;')
     let a = document.createElement('a');
     a.setAttribute('class', 'link');
     a.href = link.href;
     a.innerText = link.title;
     a.target = "__blank";
     inkElement.appendChild(a);
+    let icon = document.createElement("i");
+    icon.setAttribute("class", "fas fa-arrow-right farArrow");
+    inkElement.appendChild(icon);
     document.getElementById("links").appendChild(inkElement);
 })
 document.getElementById("bottom-contacter").onclick = function () {

@@ -1,5 +1,5 @@
 :root{
-    --primary-color:#39E09B;
+    --primary-color:#429089; /* #39E09B; */
     --primary-image:linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
     --primary-font: 'Montserrat', sans-serif;
 }
@@ -54,7 +54,7 @@ p{
 }
 .central-body{
     flex:1;
-    width:800px;
+    width:90%;
     height:auto;
     position: relative;
     left: 50%;
@@ -69,10 +69,10 @@ p{
     margin-top:0px !important;
     flex:1;
     margin: auto;
-    width:140px;
-    height:140px;
-    border-radius: 70px;
-    border: 3px solid var(--primary-color);
+    width:170px;
+    height:170px;
+    border-radius: 85px;
+    border: 4px solid var(--primary-color);
 }
 .fullName{
     display: block;
@@ -82,9 +82,9 @@ p{
     margin: auto;
     margin-top:20px;
     font-family: var(--primary-font);
-    font-weight: bold;
-    font-size: 23px;
-    letter-spacing: -1px;
+    font-weight: bolder;
+    font-size: 29px;
+    letter-spacing: -0.4px;
     height:40px;
     align-items: center;
     display: block;
@@ -95,19 +95,25 @@ p{
 .description{
     margin:10px 0px 10px 0px;
     font-family: var(--primary-font);
-    font-size: 18px;
+    font-size: 21px;
     width:100%;
-    letter-spacing: -1.5px;
+    letter-spacing: -0.6px;
+    font-weight: boldx;
     display: block;
     text-align: center;
     flex:1;
     color:white;
-  -webkit-text-stroke-color: var(--primary-color);
+  -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: .02px; 
+}
+.farArrow{
+    position: absolute;
+    right:25px;
+    top:25px
 }
 .ink{
     z-index: 9999;
-    margin:0px 0px 40px 0px;
+    margin:40px 0px 40px 0px;
     background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
     color:white;
@@ -115,7 +121,11 @@ p{
     border-radius: 35px;
     text-align: center;
     line-height: inherit;
-    width:800px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 900px;
+    width:90%;
     height:70px;
     justify-content: center;
     align-items: center;
@@ -124,16 +134,18 @@ p{
 .ink:hover{
     background-color: white !important;
     color: var(--primary-color) !important;
+    border-color: white;
 }
 .link{
     display: block;
     line-height: 66px;
     color:white;
+    font-size: 20px;
     text-decoration: none;
     font-family: var(--primary-font);
-    letter-spacing: -1.5px;
+    letter-spacing: -0.42px;
     font-weight: bold;
-    width: 100%;
+    width: 100% !important;
     height: 100%;
 }
 .link:hover{
