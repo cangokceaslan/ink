@@ -6,10 +6,10 @@ const profileInformation = {
 };
 const links = [
 
-    {
+    /*{
         href: "https://docs.google.com/forms/d/e/1FAIpQLSfYpUqwa-3RgN5Foh5vfHJZvKcTG9fhQekWpkp8uI_Hk49ZDQ/viewform",
         title: "Mesaj Gönder"
-    },
+    },*/
     {
         href: "https://www.cangokceaslan.com",
         title: "Websitem"
