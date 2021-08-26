@@ -1,5 +1,5 @@
 const profileInformation = {
-    profilePhoto: "https://cangokceaslan.com/images/gokceaslan-square.jpg?cache_delete=" + Date.now().toString(),
+    profilePhoto: "https://ink.cangokceaslan.com/assets/images/can.jpg?cache_delete=" + Date.now().toString(),
     //profilePhoto: "https://drive.google.com/thumbnail?id=1YyuPtO27XaYHqIYDdt4IXL2TNwiuKlB-",
     fullName: "Can Gökçeaslan",
     description: "Udemy / Youtube / Upwork"
